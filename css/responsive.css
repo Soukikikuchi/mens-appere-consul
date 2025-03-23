@@ -1,0 +1,166 @@
+/* レスポンシブスタイル */
+
+/* タブレット (768px-1199px) */
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .section {
+    padding: 80px 0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+  
+  .service-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .before-after-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .voice-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* スマートフォン (767px以下) */
+@media screen and (max-width: 767px) {
+  .header-inner {
+    height: 70px;
+    padding: 0 20px;
+  }
+  
+  .nav-list {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    z-index: 999;
+  }
+  
+  .nav-list.active {
+    display: flex;
+  }
+  
+  .hamburger {
+    display: flex;
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+  
+  .concept-text {
+    font-size: 1.3rem;
+  }
+  
+  .service-items {
+    grid-template-columns: 1fr;
+  }
+  
+  .before-after-items {
+    grid-template-columns: 1fr;
+  }
+  
+  .before-after-images {
+    flex-direction: column;
+  }
+  
+  .image-placeholder {
+    height: 250px;
+  }
+  
+  .voice-items {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-social {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+/* 小さいスマートフォン (480px以下) */
+@media screen and (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    padding: 12px 30px;
+    font-size: 0.9rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .concept-text {
+    font-size: 1.1rem;
+  }
+  
+  .service-item {
+    padding: 20px;
+  }
+  
+  .image-placeholder {
+    height: 200px;
+  }
+  
+  .flow-item {
+    padding: 25px 20px;
+  }
+  
+  .flow-title {
+    font-size: 1.1rem;
+  }
+  
+  .contact-lead {
+    font-size: 1rem;
+  }
+}
