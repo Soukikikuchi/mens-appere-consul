@@ -167,6 +167,7 @@ body {
   background-color: var(--color-bg);
   position: relative;
   overflow: hidden;
+  /* background-image: url(); */
 }
 
 .hero::before {
@@ -208,6 +209,11 @@ body {
 
 .hero-cta {
   margin-bottom: 60px;
+}
+
+.hero video{
+  width: 100%;
+  height: 100%;
 }
 
 .scroll-indicator {
